@@ -32,6 +32,18 @@ Feature Engineering
 
 1. Mapped outlets in PCA space and annotated selected outlets for interpretability
 
+**Unclustered Outlets**
+
+1. Several major, recognizable outlets that were not assigned to any cluster. Although we often group outlets like CNN, Fox News, ABC News, and others under the umbrella of ‘mainstream media,’ their behavioral patterns differ significantly across key features—particularly bias_score and agree_ratio_log. These differences are large enough that they do not form a dense cluster in our model, causing HDBSCAN to treat them as isolated outliers rather than members of a shared group.
+   
+<img width="512" height="179" alt="Screenshot 2025-12-09 at 4 08 13 PM" src="https://github.com/user-attachments/assets/d62931ef-41ff-44ba-83ac-d981a7ea6518" />
+
+2. There's a noticeable difference in political leaning b/w outlets like Fox News, ABC News (Online), CNN (Online News), and Vox, despite similarities in name recognition and mainstream visibility.
+
+3. If we compare Vox and CNN (Online News), which have identical scaled bias_scores, there's still quite a bit of difference in their agree_ratio, indicating that the consensus agrees more with Vox having a bias label of 'left' versus CNN
+
+4. If we look at Fox News and ABC News (Online), the former has a clear right/right-leaning bias_score, while the latter is left of center (but not as far left as Vox and CNN, according to the dataset)
+
 **5 Clusters That Emerged**
 
 1. **Cluster 0:** outlets that AllSides described as having a "right" bias, majority of the public agrees with the bias label, relatively high engagement (using total_votes as a proxy), outlets in this cluster show very strong belonging (average cluster_prob of 0.92)
