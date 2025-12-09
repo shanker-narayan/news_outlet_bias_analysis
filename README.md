@@ -22,7 +22,7 @@ Feature Engineering
 
 1. Standardized features to ensure equal weighting during clustering (i.e making sure that the range of feature columns were more or less equal)
 
-2. Applied PCA to understand underlying structure. One thing I noticed was that bias_scores were identical across outlets within each cluster. Therefore, PC1 signalled level of agreement with bias label, and PC2 signalled level of engagement.
+2. Applied PCA to understand underlying structure. One thing I noticed was that bias_scores were identical across outlets within each cluster. Therefore, outlets that appear further right along PC1 tend to have higher agreement, and diagonals/clusters are vertically separated by ideology (Top of PC2 corresponds to 'right' outlets, bottom corresponds to 'left')
 
 **Clustering**
 
