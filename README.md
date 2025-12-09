@@ -30,7 +30,7 @@ Feature Engineering
 
 **Visualization**
 
-1. Mapped outlets in PCA space and annotated selected sources for interpretability
+1. Mapped outlets in PCA space and annotated selected outlets for interpretability
 
 **5 Clusters That Emerged**
 
