@@ -60,9 +60,9 @@ Feature Engineering
 
 **Key Insights**
 
-1. Ideology was the dominant factor distinguishing clusters, as evidenced by the fact that each cluster contains only one ideological label. Other features (agreement ratio, engagement) explain variation within each ideological cluster, but not across clusters.
+1. Ideology was the dominant factor distinguishing clusters, as evidenced by the fact that each contained only one ideological label. Other features (agreement ratio, engagement) explain variation within each ideological cluster, but not across them.
 
-2. Since each cluster contains only one ideology, horizontal separation within each cluster reflects differences in public agreement with the bias label. Outlets with higher public agreement appear farther to the right along PC1, while outlets with lower agreement appear to the left. For example, in cluster 1 (firmly left outlets), CNN (Opinion), MSNBC, and The New Yorker appear further to the right because there's more agreement with their bias labels than with Vice or NewsOne.
+2. Since each cluster contains only one ideology, horizontal separation reflects differences in public agreement with the bias label. Outlets with higher public agreement appear farther to the right along PC1, while outlets with lower agreement appear to the left. For example, in cluster 1 (firmly left outlets), CNN (Opinion), MSNBC, and The New Yorker appear further to the right because there's more agreement with their bias labels than with Vice or NewsOne.
 
 3. The diagonals show that within each ideology, outlets with more public agreement also tend to have more audience engagement — and outlets with less agreement tend to have less engagement.
 
