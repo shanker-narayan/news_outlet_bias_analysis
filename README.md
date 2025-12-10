@@ -60,17 +60,19 @@ Feature Engineering
 
 **Key Insights**
 
-1. Each cluster contains only one ideology, so horizontal separation within each cluster reflects differences in public agreement with the bias label. Outlets with higher public agreement appear farther to the right along PC1, while outlets with lower agreement appear to the left. For example, in cluster 1 (firmly left outlets), CNN (Opinion), MSNBC, and The New Yorker appear to the right because they have higher public agreement with the bias label than Vice or NewsOne.
+1. Ideology was the dominant factor distinguishing clusters, as evidenced by the fact that each cluster contains only one ideological label. Other features (agreement ratio, engagement) explain variation within each ideological cluster, but not across clusters.
 
-2. The diagonals show that within each ideology, outlets with more public agreement also tend to have more audience engagement — and outlets with less agreement tend to have less engagement.
+2. Since each cluster contains only one ideology, horizontal separation within each cluster reflects differences in public agreement with the bias label. Outlets with higher public agreement appear farther to the right along PC1, while outlets with lower agreement appear to the left. For example, in cluster 1 (firmly left outlets), CNN (Opinion), MSNBC, and The New Yorker appear further to the right because there's more agreement with their bias labels than with Vice or NewsOne.
 
-3. Clusters 0 (blue) and 1 (orange) begin further to the right in the chart because the outlets in these groups have higher minimum agreement levels compared to other clusters. However, they also display wider internal variation in agreement (i.e., longer diagonals) compared to others. Since clusters 0 and 1 correspond to firmly right-leaning and firmly left-leaning outlets, respectively, this pattern raises an interesting question: **do strongly ideological outlets tend to exhibit more polarized levels of public agreement?**
+3. The diagonals show that within each ideology, outlets with more public agreement also tend to have more audience engagement — and outlets with less agreement tend to have less engagement.
 
-4. Ideology drives the vertical separation between diagonals/clusters (PC2). From top to bottom in our PCA chart, the clusters follow this structure:
+4. Clusters 0 (blue) and 1 (orange) begin further to the right in the chart because the outlets in these groups have higher minimum agreement levels compared to other clusters. However, they also display wider internal variation in agreement (i.e., longer diagonals) compared to others. Since clusters 0 and 1 correspond to firmly right-leaning and firmly left-leaning outlets, respectively, this pattern raises an interesting question: **do strongly ideological outlets tend to exhibit more polarized levels of public agreement?**
+
+5. Ideology drives the vertical separation between diagonals/clusters (PC2). From top to bottom in our PCA chart, the clusters follow this structure:
 
 **Top:** Cluster 0 (Right)
 **Upper Middle:** Cluster 2 (Right-leaning)
 **Middle:** Clusters 4 and 3 (Center, left of center)
 **Bottom:** Cluster 1 (Left)
 
-5. An outlet’s position should be interpreted both within its own cluster and across clusters. For example, NPR (Cluster 4, centrist) appears to the right of The New York Times (Cluster 3, left-leaning) along PC1, meaning NPR has higher public agreement with its assigned bias label in relative terms. However, both outlets still fall within regions where disagreement outweighs agreement overall. In fact, NPR’s cluster (Cluster 4) exhibits the lowest average agreement of any cluster, meaning even the “more agreed-upon” outlets within this group receive lower consensus than outlets in other segments. **The public often disagrees with outlets being labelled as "neutral", which is why centrist outlets form the lowest-agreement cluster in our analysis.**
+6. An outlet’s position should be interpreted both within its own cluster and across clusters. For example, NPR (Cluster 4, centrist) appears to the right of The New York Times (Cluster 3, left-leaning) along PC1, meaning NPR has higher public agreement with its assigned bias label in relative terms. However, both outlets still fall within regions where disagreement outweighs agreement overall. In fact, NPR’s cluster (Cluster 4) exhibits the lowest agreement of any cluster, meaning the average outlet within this group receives lower consensus on bias label than outlets in other segments. **In other words, the public often disagrees with outlets being labelled as purely "neutral", which is why centrist outlets form the lowest-agreement cluster in our analysis.**
